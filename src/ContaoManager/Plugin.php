@@ -30,6 +30,8 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface
      */
     public function getBundles(ParserInterface $parser)
     {
+        $foo = 'bar';
+
         return [
             BundleConfig::create(ContaoButterMenuBundle::class)->setLoadAfter(
                 [
@@ -39,7 +41,6 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface
             ),
         ];
     }
-
 
     /**
      * Allows a plugin to override extension configuration.
