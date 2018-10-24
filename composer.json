@@ -58,7 +58,7 @@
         "preferred-install": "dist"
     },
     "extra": {
-        "contao-manager-plugin": "HeimrichHannot\\ButerMenuBundle\\ContaoManager\\Plugin",
+        "contao-manager-plugin": "HeimrichHannot\\ButterMenuBundle\\ContaoManager\\Plugin",
         "foxy": true
     }
 }
