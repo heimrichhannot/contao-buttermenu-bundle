@@ -1,0 +1,54 @@
+<?php if (!$this->initialized && 'level_1' === $this->level): ?>
+<div class="bm-menu bm-default" data-bm-min-left="15" data-bm-min-right="15" data-bm-parent-muted="touch" data-bm-arrow-alignment="center" data-bm-compact-mode="off-canvas" data-bm-compact-breakpoint="768" data-bm-compact-canvas=".bm-compact-canvas">
+    <div class="bm-wrapper">
+        <div class="bm-prev-wrapper">
+            <a class="bm-prev-btn" href="#"></a>
+            <a class="bm-prev-title" href="#"></a>
+        </div>
+        <?php endif; ?>
+        <ul class="<?= ('level_1' === $this->level ? 'bm-nav-root bm-nav ' : 'bm-nav ').$this->level ?>">
+            <?php foreach ($this->items as $i => $item): ?>
+                <?php $liClass = [$item['class'], 'bm-item', (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
+                <?php $linkClass = [$item['class'], ('level_1' === $this->level ? 'bm-root-link' : ''), 'bm-link', (!empty($item['subitems'] && 'level_1' === $this->level) ? 'bm-has-dropdown' : ''), (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
+                <?= sprintf(
+                    '<li class="%s" itemprop="name"%s><a href="%s" title="%s" class="%s"%s%s%s%s%s%s%s><span itemprop="name">%s</span></a>%s</li>',
+                    trim(implode(' ', $liClass)),
+                    (!empty($item['subitems']) ? ' aria-haspopup="true"' : ''),
+                    $item['href'] ?: './',
+                    $item['pageTitle'] ?: $item['title'],
+                    trim(implode(' ', $linkClass)),
+                    (($item['accesskey'] !== '') ? ' accesskey="'.$item['accesskey'].'"' : ''),
+                    (($item['tabindex']) ? ' tabindex="'.$item['tabindex'].'"' : ''),
+                    (($item['nofollow']) ? ' rel="nofollow"' : ''),
+                    (!empty($item['subitems']) ? ' aria-haspopup="true"' : ''),
+                    (!empty($item['subitems']) ? ' aria-expanded="false"' : ''),
+                    (!empty($item['subitems'] && 'level_1' === $this->level) ? ' data-bm-dropdown="'.\Contao\StringUtil::standardize($item['title']).'"' : ''),
+                    (!empty($item['subitems']) ? ' data-bm-popup="'.\Contao\StringUtil::standardize($item['title']).'"' : ''),
+                    $item['link'],
+                    'level_1' !== $this->level ? $item['subitems'] : ''
+                ); ?>
+            <?php endforeach; ?>
+        </ul>
+
+    <?php if (!$this->initialized): ?>
+        <?php if ('level_1' === $this->level):  // dropdown section (2nd level+)          ?>
+    </div><?php // end bm-wrapper ?>
+    <div class="bm-dropdown-wrapper">
+        <div class="bm-dropdown-bg"></div>
+        <div class="bm-dropdown-arrow"></div>
+        <div class="bm-dropdown-container">
+            <?php foreach ($this->items as $item): ?>
+                <?php if (!empty($item['subitems'])): ?>
+                    <div class="bm-dropdown-section" data-bm-dropdown="<?= \Contao\StringUtil::standardize($item['title']); ?>" aria-hidden="true">
+                        <div class="bm-dropdown-content">
+                            <?= $item['subitems']; ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div><?php // end bm-menu ?>
+<?php endif; ?>
+<?php $this->initialized = true; ?>
+<?php endif; ?>
