@@ -9,7 +9,7 @@
 error_reporting(E_ALL);
 
 $include = function ($file) {
-    return file_exists($file) ? include $file : false;
+    return file_exists($file) ? include_once $file : false;
 };
 
 // PhpStorm fix (see https://www.drupal.org/node/2597814)
@@ -17,21 +17,17 @@ if (!defined('PHPUNIT_COMPOSER_INSTALL')) {
     define('PHPUNIT_COMPOSER_INSTALL', __DIR__.'/../vendor/autoload.php');
 }
 
-if (!defined('TL_ROOT')) {
-    define('TL_ROOT', __DIR__);
-}
-
-if (false === ($loader = $include(__DIR__.'/../vendor/autoload.php'))
+if (
+    false === ($loader = $include(__DIR__.'/../vendor/autoload.php'))
     && false === ($loader = $include(__DIR__.'/../../../autoload.php'))
-    && false === ($loader = $include(dirname(dirname(getenv('PWD'))).'/autoload.php'))) {
-    echo 'You must set up the project dependencies, run the following commands:'.PHP_EOL.'curl -sS https://getcomposer.org/installer | php'.PHP_EOL.'php composer.phar install'.PHP_EOL;
+    && false === ($loader = $include(dirname(dirname(getenv('PWD'))).'/autoload.php'))
+) {
+    echo 'You must set up the project dependencies, run the following commands:'.PHP_EOL
+         .'curl -sS https://getcomposer.org/installer | php'.PHP_EOL
+         .'php composer.phar install'.PHP_EOL;
 
     exit(1);
 }
-
-require 'TestCaseEnvironment.php';
-
-require 'Request/StubCurlRequest.php';
 
 // Handle classes in the global namespace
 $legacyLoader = function ($class) {
@@ -50,7 +46,6 @@ $legacyLoader = function ($class) {
     $namespaced = 'Contao\\'.$class;
 
     if (class_exists($namespaced) || interface_exists($namespaced) || trait_exists($namespaced)) {
-        class_alias($namespaced, $class);
     }
 };
 

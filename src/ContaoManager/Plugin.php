@@ -6,7 +6,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\ButerMenuBundle\ContaoManager;
+namespace HeimrichHannot\ButterMenuBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
@@ -30,8 +30,6 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface
      */
     public function getBundles(ParserInterface $parser)
     {
-        $foo = 'bar';
-
         return [
             BundleConfig::create(ContaoButterMenuBundle::class)->setLoadAfter(
                 [

@@ -6,12 +6,12 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\UtilsBundle\Tests;
+namespace HeimrichHannot\ButterMenuBundle\Tests;
 
+use Contao\TestCase\ContaoTestCase;
 use HeimrichHannot\ButterMenuBundle\ContaoButterMenuBundle;
-use PHPUnit\Framework\TestCase;
 
-class ContaoButterMenuBundleTest extends TestCase
+class ContaoButterMenuBundleTest extends ContaoTestCase
 {
     /**
      * Tests the object instantiation.

@@ -22,7 +22,7 @@
         "heimrichhannot/contao-encore-bundle": "^0.1"
     },
     "require-dev": {
-        "contao/test-case": "^1.1",
+        "contao/test-case": "1.1",
         "contao/manager-plugin": "^2.0",
         "friendsofphp/php-cs-fixer": "^2.2",
         "phpunit/phpunit": ">=6.0 <6.5",
@@ -30,6 +30,10 @@
         "php-http/message-factory": "^1.0.2",
         "php-coveralls/php-coveralls": "^2.0",
         "symfony/phpunit-bridge": "^3.2"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
     },
     "autoload": {
         "psr-4": {
