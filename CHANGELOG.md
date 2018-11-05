@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2018-11-05
+
+### Fixed
+- `encore-bundle` dependency changed to `0.*`
+
 ## [1.0.1] - 2018-10-24
 
 ### Fixed
