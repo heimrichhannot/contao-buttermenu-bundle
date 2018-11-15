@@ -18,7 +18,7 @@
                     $item['pageTitle'] ?: $item['title'],
                     trim(implode(' ', $linkClass)),
                     (($item['accesskey'] !== '') ? ' accesskey="'.$item['accesskey'].'"' : ''),
-                    (($item['tabindex']) ? ' tabindex="'.$item['tabindex'].'"' : ''),
+                    (($item['tabindex'] || 'level_1' !== $this->level ) ? ' tabindex="'. ('level_1' !== $this->level ? '-1' : $item['tabindex']).'"' : ''),
                     (($item['nofollow']) ? ' rel="nofollow"' : ''),
                     (!empty($item['subitems']) ? ' aria-haspopup="true"' : ''),
                     (!empty($item['subitems']) ? ' aria-expanded="false"' : ''),
@@ -52,3 +52,4 @@
 <?php endif; ?>
 <?php $this->initialized = true; ?>
 <?php endif; ?>
+
