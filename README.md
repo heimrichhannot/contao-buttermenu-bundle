@@ -76,7 +76,9 @@ Attribute | Scope | Default | Description
 ------ | ---- | ------- | -----------
 data-bm-parent-muted | bm-menu | `touch` | Change to `click`, `touch` or `both` to prevent click on parent dropdown links
 data-bm-min-left | bm-menu | 15 | Minimum offset to left side of viewport.
-data-bm-min-right | bm-menu | 15 | Minimum offset to left side of viewport.   
+data-bm-min-right | bm-menu | 15 | Minimum offset to left side of viewport.
+data-bm-columns | bm-menu | 2 | Column count. Limit height for ul > li inside dropdowns to provide flexbox column support with proper height calculation.
+data-bm-column-min | bm-menu | 5 | Activate columns from `data-bm-columns` only if more than provided list item count. 
 data-bm-compact-breakpoint | bm-menu | 768 | The viewport breakpoint width below buttermenu will work in mobile `compact` mode. 
 data-bm-arrow-alignment | bm-menu | center | Change to left, right or center to align arrow with navigation text.
 data-bm-compact-mode | bm-menu | off-canvas | Change to `default` for normal hover/touch dropdown-toggle, or to off-canvas for an mobile menu with burger menu.

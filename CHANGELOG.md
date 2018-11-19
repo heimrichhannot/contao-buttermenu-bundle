@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2018-11-19
+
+### Added
+- flex column wrap support with data attributes `data-bm-column-min`, `data-bm-columns`
+
 ## [1.0.3] - 2018-11-15
 
 ### Fixed
