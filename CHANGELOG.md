@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2019-01-21
+
+### Added
+- keyboard navigation in compact mode
+
 ## [1.1.0] - 2018-11-19
 
 ### Added
