@@ -1,10 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.2] - 2019-01-22
+
+### Fixed
+- aria support: use aria-label on nested menu that refers to parent id
+
 ## [1.2.1] - 2019-01-21
 
 ### Fixed
-- added more specific back link titel using aria-label
+- added more specific back link title using aria-label
 
 ## [1.2.0] - 2019-01-21
 
