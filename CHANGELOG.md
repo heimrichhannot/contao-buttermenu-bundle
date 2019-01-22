@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2019-01-21
+
+### Fixed
+- added more specific back link titel using aria-label
+
 ## [1.2.0] - 2019-01-21
 
 ### Added
