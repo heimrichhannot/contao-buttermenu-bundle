@@ -13,7 +13,7 @@
                 <?php $liClass = [$item['class'], 'bm-item', (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
                 <?php $linkClass = [$item['class'], ('level_1' === $this->level ? 'bm-root-link' : ''), 'bm-link', (!empty($item['subitems'] && 'level_1' === $this->level) ? 'bm-has-dropdown' : ''), (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
                 <?= sprintf(
-                    '<li class="%s" itemprop="name"%s><a href="%s" title="%s" class="%s"%s%s%s%s%s%s%s%s><span itemprop="name">%s</span></a>%s</li>',
+                    '<li class="%s" itemprop="name"%s><a href="%s" title="%s" class="%s"%s%s%s%s%s%s%s%s%s><span itemprop="name">%s</span></a>%s</li>',
                     trim(implode(' ', $liClass)),
                     (!empty($item['subitems']) ? ' aria-haspopup="true"' : ''),
                     $item['href'] ?: './',
@@ -27,6 +27,7 @@
                     (!empty($item['subitems'] && 'level_1' === $this->level) ? ' data-bm-dropdown="'.\Contao\StringUtil::standardize($item['title']).'"' : ''),
                     (!empty($item['subitems'] && 'level_1' === $this->level) ? (' id="bm-link-'.\Contao\StringUtil::standardize($item['title']).'"') : ''),
                     (!empty($item['subitems']) ? ' data-bm-popup="'.\Contao\StringUtil::standardize($item['title']).'"' : ''),
+                    (true === $item['isActive'] ? ' aria-current="page"' : ''),
                     $item['link'],
                     'level_1' !== $this->level ? $item['subitems'] : ''
                 ); ?>

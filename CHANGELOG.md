@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.3] - 2019-01-22
+
+### Fixed
+- added `aria-current="page"` to active links
+
 ## [1.2.2] - 2019-01-22
 
 ### Fixed
