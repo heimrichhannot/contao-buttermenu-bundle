@@ -2,6 +2,6 @@
     "name": "contao-buttermenu-bundle",
     "version": "1.0.0",
     "dependencies": {
-        "contao-buttermenu": "^1.1"
+        "contao-buttermenu": "^1.2.10"
     }
 }
