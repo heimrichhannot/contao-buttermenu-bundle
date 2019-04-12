@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.5] - 2019-04-12
+
+### Fixed
+- accessibility support fixed, dropdownRoots are now buttons (toggle dropdown on focus with enter/space and tab through dropdown if toggled)
+
+## [1.2.4] - 2019-01-22
+
+### Fixed
+- added `aria-current="page"` to active links
+
 ## [1.2.3] - 2019-01-22
 
 ### Fixed
