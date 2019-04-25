@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.6] - 2019-04-25
+
+### Fixed
+- w3c validator error
+
 ## [1.2.5] - 2019-04-12
 
 ### Fixed
