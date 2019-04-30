@@ -13,7 +13,7 @@
                 <?php $liClass = [$item['class'], 'bm-item', (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
                 <?php $linkClass = [$item['class'], ('level_1' === $this->level ? 'bm-root-link' : ''), 'bm-link', (!empty($item['subitems'] && 'level_1' === $this->level) ? 'bm-has-dropdown' : ''), (!empty($item['subitems']) ? 'bm-has-popup' : '')]; ?>
                 <?= sprintf(
-                    '<li class="%s" itemprop="name"%s><%s aria-label="%s" class="%s"%s%s%s%s%s%s%s%s%s><span itemprop="name">%s</span><\/%s>%s</li>',
+                    '<li class="%s" itemprop="name"%s><%s aria-label="%s" class="%s"%s%s%s%s%s%s%s%s%s><span itemprop="name">%s</span></%s>%s</li>',
                     trim(implode(' ', $liClass)),
                     (!empty($item['subitems']) ? ' aria-haspopup="true"' : ''),
                     ('level_1' === $this->level && !empty($item['subitems']) ? 'button' : ('a href=' . $item['href'] ?: './')),
@@ -57,4 +57,3 @@
 <?php endif; ?>
 <?php $this->initialized = true; ?>
 <?php endif; ?>
-

@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+
+
+## [1.2.7] - 2019-04-30
+
+### Fixed
+- missing argument in default template
+- syntax error in default template
+
 ## [1.2.6] - 2019-04-25
 
 ### Fixed
