@@ -1,7 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2019-04-30
 
+### Fixed
+- compact mode previous button link title
+
+### Changed
+- `data-bm-compact-show-current` added as data attribute (default: false), in compact mode the active submenu is now no longer the active menu 
 
 ## [1.2.7] - 2019-04-30
 

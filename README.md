@@ -84,3 +84,4 @@ data-bm-arrow-alignment | bm-menu | center | Change to left, right or center to 
 data-bm-compact-mode | bm-menu | off-canvas | Change to `default` for normal hover/touch dropdown-toggle, or to off-canvas for an mobile menu with burger menu.
 data-bm-compact-canvas | bm-menu | null | Declare the css-selector for the canvas container e.g. `.bm-compact-canvas`
 data-bm-compact-toggle | any off-canvas open/close trigger | null | Declare the off-canvas container css selector e.g. `.bm-compact-canvas` on any open/close trigger like the burger menu button.
+data-bm-compact-show-current | bm-menu | false | If tru, upon open buttermenu in compact mode current active submenu is active (set to false for proper accessibility support)

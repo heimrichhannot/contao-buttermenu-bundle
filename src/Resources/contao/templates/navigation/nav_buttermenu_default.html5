@@ -1,8 +1,8 @@
 <?php if (!$this->initialized && 'level_1' === $this->level): ?>
-<div class="bm-menu bm-default" data-bm-min-left="15" data-bm-min-right="15" data-bm-column-min="3" data-bm-columns="3" data-bm-parent-muted="touch" data-bm-arrow-alignment="center" data-bm-compact-mode="off-canvas" data-bm-compact-breakpoint="768" data-bm-compact-canvas=".bm-compact-canvas">
+<div class="bm-menu bm-default" data-bm-min-left="15" data-bm-min-right="15" data-bm-column-min="3" data-bm-columns="3" data-bm-parent-muted="touch" data-bm-arrow-alignment="center" data-bm-compact-mode="off-canvas" data-bm-compact-breakpoint="768" data-bm-compact-show-current="false" data-bm-compact-canvas=".bm-compact-canvas">
     <div class="bm-wrapper">
         <div class="bm-prev-wrapper">
-            <a class="bm-prev" href="#" title="<?= $GLOBALS['TL_LANG']['MSC']['backBTTitle']; ?>" tabindex="-1" aria-label="<?= $GLOBALS['TL_LANG']['MSC']['backBTTitle']; ?>">
+            <a class="bm-prev" href="#" title="<?= $GLOBALS['TL_LANG']['MSC']['bmPrevBtnTitle']; ?>" tabindex="-1" aria-label="<?= $GLOBALS['TL_LANG']['MSC']['backBTTitle']; ?>">
                 <span class="bm-prev-btn"></span>
                 <span class="bm-prev-title"></span>
             </a>
