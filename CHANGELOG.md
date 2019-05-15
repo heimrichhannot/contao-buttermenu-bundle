@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2019-05-15
+
+### Added
+- License  
+
+### Changed
+- update dependency
+
 ## [1.3.0] - 2019-04-30
 
 ### Fixed
