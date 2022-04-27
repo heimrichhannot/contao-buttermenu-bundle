@@ -1,9 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 2022-04-27
+## [2.0.0] - 2022-04-27
 - Changed: removed test setup
-- 
+- Changed: renamed bundle class (**BREAKING!**)
+- Changed: updated encore bundle integration
+- Changed: updated dependencies
+- Changed: allow php 8
 
 ## [1.3.1] - 2019-05-15
 
