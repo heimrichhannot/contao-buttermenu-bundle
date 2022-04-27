@@ -10,6 +10,6 @@ namespace HeimrichHannot\ButterMenuBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaoButterMenuBundle extends Bundle
+class HeimrichHannotButterMenuBundle extends Bundle
 {
 }
