@@ -2,8 +2,6 @@
 
 [![](https://img.shields.io/packagist/v/heimrichhannot/contao-butermenu-bundle.svg)](https://packagist.org/packages/heimrichhannot/contao-butermenu-bundle)
 [![](https://img.shields.io/packagist/dt/heimrichhannot/contao-butermenu-bundle.svg)](https://packagist.org/packages/heimrichhannot/contao-butermenu-bundle/stats)
-[![](https://img.shields.io/travis/heimrichhannot/contao-butermenu-bundle/master.svg)](https://travis-ci.org/heimrichhannot/contao-butermenu-bundle/)
-[![](https://img.shields.io/coveralls/heimrichhannot/contao-butermenu-bundle/master.svg)](https://coveralls.io/github/heimrichhannot/contao-butermenu-bundle)
 
 A smooth animated navigation menu for contao with hover dropdown (big screens for instance) and off-canvas (mobile for instance) modes. 
 
