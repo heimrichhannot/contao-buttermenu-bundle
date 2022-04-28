@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2022-04-28
+- Changed: encore entry is now added automatically
+- Changed: minimum contao version is now 4.9
+- Changed: minimum php version is now 7.4
+
 ## [2.0.0] - 2022-04-27
 - Changed: removed test setup
 - Changed: renamed bundle class (**BREAKING!**)

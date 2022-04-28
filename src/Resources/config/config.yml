@@ -1,4 +1,4 @@
 huh_encore:
   js_entries:
-    - name: contao-buttermenu-bundle
+    - name: "contao-buttermenu-bundle"
       file: "vendor/heimrichhannot/contao-buttermenu-bundle/src/Resources/public/js/contao-buttermenu-bundle.es6.js"
