@@ -25,21 +25,16 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
      *
      * @return ConfigInterface[]
      */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(HeimrichHannotButterMenuBundle::class)->setLoadAfter(
-                [
-                    ContaoCoreBundle::class,
-                    HeimrichHannotContaoEncoreBundle::class,
-                ]
-            ),
+            BundleConfig::create(HeimrichHannotButterMenuBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class,]),
         ];
     }
 
-    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig)
+    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
     {
-        $loader->load('@HeimrichHannotButterMenuBundle/config/config.yml');
-        $loader->load('@HeimrichHannotButterMenuBundle/config/services.yml');
+        $loader->load('@HeimrichHannotButterMenuBundle/config/services.yaml');
     }
 }

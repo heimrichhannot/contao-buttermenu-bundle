@@ -1,4 +1,0 @@
-services:
-  HeimrichHannot\ButterMenuBundle\EventListener\ParseFrontendTemplateListener:
-    autoconfigure: true
-    autowire: true

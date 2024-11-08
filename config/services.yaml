@@ -1,0 +1,5 @@
+services:
+  HeimrichHannot\ButterMenuBundle\:
+    resource: '../src/{Asset,EventListener}/*'
+    autoconfigure: true
+    autowire: true

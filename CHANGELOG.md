@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2024-11-08
+- Changed: 
+
 ## [2.1.0] - 2022-04-28
 - Changed: encore entry is now added automatically
 - Changed: minimum contao version is now 4.9
