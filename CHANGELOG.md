@@ -2,7 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [2.2.0] - 2024-11-08
-- Changed: 
+- Changed: encore contracts support
+- Changed: modernized bundle structure
 
 ## [2.1.0] - 2022-04-28
 - Changed: encore entry is now added automatically
